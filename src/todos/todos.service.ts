@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { Todo } from './interface/todoInterface';
 import { CreateTodoDto } from './dto/CreateTodoDto';
 
-// methode pour créer un service nest g s todos   
+// commande pour créer un service nest g s todos   
 
 @Injectable()
 export class TodosService {

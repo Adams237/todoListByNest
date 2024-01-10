@@ -3,7 +3,7 @@ import { TodosService } from './todos.service';
 import { Todo } from './interface/todoInterface';
 import { CreateTodoDto } from './dto/CreateTodoDto';
 
-// commande pour créer un controleur nest g co todos
+// commande pour créer un controleur nest g co nom-controlleur
 
 @Controller('todos')
 export class TodosController {
