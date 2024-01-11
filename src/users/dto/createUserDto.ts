@@ -1,3 +1,4 @@
+import { Type } from "class-transformer";
 import { IsBoolean, IsNotEmpty, IsOptional, IsString, ValidateNested } from "class-validator"
 
 export class CreateUserSettingDto {
@@ -24,6 +25,6 @@ export class createUserDto{
 
     @IsOptional()
     @ValidateNested()
-
+    @Type(()=> CreateUserSettingDto)
     settings?: CreateUserSettingDto
 }
