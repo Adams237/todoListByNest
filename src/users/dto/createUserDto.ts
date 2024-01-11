@@ -9,7 +9,7 @@ export class CreateUserSettingDto {
     @IsBoolean()
     receiveMail?: false
 
-    @IsOptional()
+   
     @IsBoolean()
     receiveSMS?: boolean
 }
@@ -24,5 +24,6 @@ export class createUserDto{
 
     @IsOptional()
     @ValidateNested()
+
     settings?: CreateUserSettingDto
 }
